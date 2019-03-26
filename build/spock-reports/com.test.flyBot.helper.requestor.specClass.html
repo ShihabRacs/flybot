@@ -1,0 +1,616 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'></meta>
+<style>body {
+  font-family: Helvetica;
+}
+
+table {
+  margin: 5px;
+}
+
+div.date-test-ran {
+  font-size: small;
+  font-style: italic;
+}
+
+table.features-table {
+  width: 800px;
+}
+
+table.summary-table {
+  width: 800px;
+  text-align: left;
+  font-weight: bold;
+  font-size: small;
+}
+
+table.summary-table th {
+  background: lightblue;
+  padding: 6px;
+}
+
+table.summary-table td {
+  background: #E0E0E0;
+  padding: 6px;
+}
+
+pre.narrative {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -1px;
+  color: #444;
+}
+
+.feature-description {
+  font-size: large;
+  background: lightblue;
+  padding: 4px;
+}
+
+.feature-toc-error {
+	color: #F89A4F;
+}
+
+.feature-toc-failure {
+	color: #FF8080;
+}
+
+.feature-toc-ignored {
+	color: lightgray;
+}
+
+.feature-toc-pass {
+	color: green;
+}
+
+.feature-description.error {
+  background: #F89A4F;
+}
+
+.feature-description.failure {
+  background: #FF8080;
+}
+
+.feature-description.ignored {
+  background: lightgray;
+}
+
+.feature-description.ignored .reason {
+  color: black;
+  font-style: italic;
+  font-size: small;
+}
+
+div.issues {
+  color: black;
+  font-weight: bold;
+  font-size: small;
+}
+
+div.problem-description {
+  padding: 10px;
+  background: pink;
+  border-radius: 10px;
+}
+
+div.problem-header {
+  font-weight: bold;
+  color: red;
+}
+
+div.problem-list {
+  
+}
+
+table.ex-table th {
+  background: lightblue;
+  padding: 0px 5px 0px 5px;
+}
+
+table.ex-table td {
+  background: #E0E0E0;
+  padding: 0px 5px 0px 5px;
+}
+
+table td {
+  min-width: 50px;
+}
+
+col.block-kind-col {
+  width: 70px;
+}
+
+span.spec-header {
+  font-weight: bold;
+}
+
+div.spec-text {
+  /*color: green;*/
+}
+
+div.spec-status {
+  font-style: italic;
+}
+
+.ignored {
+  color: gray;
+}
+
+td.ex-result {
+  text-align: center;
+  background: white !important;
+}
+
+.ex-pass {
+  color: darkgreen;
+}
+
+.ex-fail {
+  color: red;
+  font-weight: bold;
+}
+
+div.block-kind {
+  margin: 2px;
+  font-style: italic;
+}
+
+div.block-text {
+
+}
+
+div.footer {
+  text-align: center;
+  font-size: small;
+}
+</style>
+</head>
+<body>
+<h2>Report for com.test.flyBot.helper.requestor.specClass</h2>
+<hr></hr>
+<div class='summary-report'>
+<h3>Summary:</h3>
+<div class='date-test-ran'>Created on Wed Mar 27 01:14:03 BDT 2019 by Dark-Knight</div>
+<table class='summary-table'>
+<thead>
+<th>Executed features</th>
+<th>Failures</th>
+<th>Errors</th>
+<th>Skipped</th>
+<th>Success rate</th>
+<th>Time</th>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100.0%</td>
+<td>4.606 seconds</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Features:</h3>
+<table class='features-table'>
+<colgroup>
+<col class='block-kind-col'></col>
+<col class='block-text-col'></col>
+</colgroup>
+<tbody>
+<ul id='toc'>
+<li>
+<a href='#546254316' class='feature-toc-pass'> (1) Request is made with a valid bank account of Austria</a>
+</li>
+<li>
+<a href='#1810487179' class='feature-toc-pass'> (2) Request is made with a valid bank account of Germany</a>
+</li>
+<li>
+<a href='#555067452' class='feature-toc-pass'> (3) Request is made with a valid bank account of Switzerland</a>
+</li>
+<li>
+<a href='#-1874405680' class='feature-toc-pass'> (4) Request is made with a valid bank account of Finland</a>
+</li>
+<li>
+<a href='#-761643279' class='feature-toc-pass'> (5) Request is made with a valid bank account of Sweden</a>
+</li>
+<li>
+<a href='#-473762270' class='feature-toc-pass'> (6) Request is made with a valid bank account of Norway</a>
+</li>
+<li>
+<a href='#-1683721609' class='feature-toc-pass'> (7) Request is made with a valid bank account of Denmark</a>
+</li>
+<li>
+<a href='#1302583149' class='feature-toc-pass'> (8) Request is made with a valid bank account of non supported countries</a>
+</li>
+<li>
+<a href='#-523782922' class='feature-toc-pass'>Request is made with an invalid bank account[1]</a>
+</li>
+</ul>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='546254316'>
+<span> (1) Request is made with a valid bank account of Austria</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>a valid bank account of Austria is provided</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'> We check for a bank account validation</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>we check if the response is correct or not</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>a set of other parameters</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='1810487179'>
+<span> (2) Request is made with a valid bank account of Germany</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>a valid bank account of Germany is provided</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'> We check for a bank account validation</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>we check if the response is correct or not</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>a set of other parameters</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='555067452'>
+<span> (3) Request is made with a valid bank account of Switzerland</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>a valid bank account of Switzerland is provided</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'> We check for a bank account validation</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>we check if the response is correct or not</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>a set of other parameters</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-1874405680'>
+<span> (4) Request is made with a valid bank account of Finland</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>a valid bank account of Finland is provided</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'> We check for a bank account validation</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>we check if the response is correct or not</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>a set of other parameters</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-761643279'>
+<span> (5) Request is made with a valid bank account of Sweden</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>a valid bank account of Sweden is provided</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'> We check for a bank account validation</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>we check if the response is correct or not</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>a set of other parameters</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-473762270'>
+<span> (6) Request is made with a valid bank account of Norway</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>a valid bank account of Norway is provided</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'> We check for a bank account validation</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>we check if the response is correct or not</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>a set of other parameters</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-1683721609'>
+<span> (7) Request is made with a valid bank account of Denmark</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>a valid bank account of Denmark is provided</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'> We check for a bank account validation</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>we check if the response is correct or not</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>a set of other parameters</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='1302583149'>
+<span> (8) Request is made with a valid bank account of non supported countries</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>a valid bank account of non supported country is provided</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'> We check for a bank account validation</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>we check if the response is correct or not</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>a set of other parameters</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='feature-description' id='-523782891'>
+<span>Request is made with an invalid bank account[2]</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>an invalid bank account is provided</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'> We check for a bank account validation</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>we check if the response is correct or not</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>a set of other parameters</div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<div class='footer'>Generated by <a href='https://github.com/renatoathaydes/spock-reports'>Athaydes Spock Reports</a></div>
+</body>
+</html>

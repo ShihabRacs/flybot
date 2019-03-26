@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.test.flyBot.helper.requestor.specClass" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-03-26T19:13:58" hostname="Dark-Knight-PC" time="4.591">
+  <properties/>
+  <testcase name=" (1) Request is made with a valid bank account of Austria" classname="com.test.flyBot.helper.requestor.specClass" time="2.189"/>
+  <testcase name=" (2) Request is made with a valid bank account of Germany" classname="com.test.flyBot.helper.requestor.specClass" time="0.255"/>
+  <testcase name=" (3) Request is made with a valid bank account of Switzerland" classname="com.test.flyBot.helper.requestor.specClass" time="0.263"/>
+  <testcase name=" (4) Request is made with a valid bank account of Finland" classname="com.test.flyBot.helper.requestor.specClass" time="0.3"/>
+  <testcase name=" (5) Request is made with a valid bank account of Sweden" classname="com.test.flyBot.helper.requestor.specClass" time="0.318"/>
+  <testcase name=" (6) Request is made with a valid bank account of Norway" classname="com.test.flyBot.helper.requestor.specClass" time="0.32"/>
+  <testcase name=" (7) Request is made with a valid bank account of Denmark" classname="com.test.flyBot.helper.requestor.specClass" time="0.301"/>
+  <testcase name=" (8) Request is made with a valid bank account of non supported countries" classname="com.test.flyBot.helper.requestor.specClass" time="0.311"/>
+  <testcase name="Request is made with an invalid bank account[0]" classname="com.test.flyBot.helper.requestor.specClass" time="0.318"/>
+  <system-out><![CDATA[2019-03-27 01:13:58,871 WARN  -  Failed to create instance of com.athaydes.spockframework.report.internal.HtmlReportCreator 
+ groovy.lang.MissingPropertyException: No such property: enabled for class: com.athaydes.spockframework.report.internal.HtmlReportCreator
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:51)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.setProperty(ScriptBytecodeAdapter.java:484)
+	at com.athaydes.spockframework.report.SpockReportExtension$_configReportCreator_closure3.doCall(SpockReportExtension.groovy:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:292)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.callClosureForMapEntry(DefaultGroovyMethods.java:5223)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2104)
+	at org.codehaus.groovy.runtime.dgm$163.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:271)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:122)
+	at com.athaydes.spockframework.report.SpockReportExtension.configReportCreator(SpockReportExtension.groovy:100)
+	at com.athaydes.spockframework.report.SpockReportExtension.this$2$configReportCreator(SpockReportExtension.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:207)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:163)
+	at com.athaydes.spockframework.report.SpockReportExtension.start(SpockReportExtension.groovy:40)
+	at org.spockframework.runtime.GlobalExtensionRegistry.startGlobalExtensions(GlobalExtensionRegistry.java:105)
+	at org.spockframework.runtime.RunContext.start(RunContext.java:63)
+	at org.spockframework.runtime.RunContext.get(RunContext.java:165)
+	at org.spockframework.runtime.Sputnik.runExtensionsIfNecessary(Sputnik.java:88)
+	at org.spockframework.runtime.Sputnik.run(Sputnik.java:61)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-27 01:13:58,966 INFO  -  
+
+================================== Scenario (Sync) -  (1) Request is made with a valid bank account of Austria =======================================
+ 
+ 2019-03-27 01:13:58,969 INFO  -  ----------------------------a valid bank account of Austria is provided---------------------------- 
+ 2019-03-27 01:13:58,995 INFO  -  Bank Account: AT079361624961002771 
+ 2019-03-27 01:13:58,996 INFO  -  We check for a bank account validation 
+ 2019-03-27 01:13:59,397 INFO  -  
+Request URL: https://dev.horizonafs.com/ecommercerest/api/v3/validate/bank-account
+Request data : {"bankAccount":"AT079361624961002771"} 
+ 2019-03-27 01:14:01,122 INFO  -  
+Request header [X-Auth-Key:Q7DaxRnFls6IpwSW1SQ2FaTFOf7UdReAFNoKY68L] 
+ 2019-03-27 01:14:01,129 INFO  -  This is the response {"isValid":true} 
+ 2019-03-27 01:14:01,139 INFO  -  This is the response Code 200 
+ 2019-03-27 01:14:01,141 INFO  -  we check if the response is correct or not 
+ 2019-03-27 01:14:01,153 INFO  -  
+
+================================== Scenario (Sync) -  (2) Request is made with a valid bank account of Germany =======================================
+ 
+ 2019-03-27 01:14:01,153 INFO  -  ----------------------------a valid bank account of Germany is provided---------------------------- 
+ 2019-03-27 01:14:01,153 INFO  -  Bank Account: DE33703532593655414386 
+ 2019-03-27 01:14:01,154 INFO  -  We check for a bank account validation 
+ 2019-03-27 01:14:01,154 INFO  -  
+Request URL: https://dev.horizonafs.com/ecommercerest/api/v3/validate/bank-account
+Request data : {"bankAccount":"DE33703532593655414386"} 
+ 2019-03-27 01:14:01,402 INFO  -  
+Request header [X-Auth-Key:Q7DaxRnFls6IpwSW1SQ2FaTFOf7UdReAFNoKY68L] 
+ 2019-03-27 01:14:01,404 INFO  -  This is the response {"isValid":true} 
+ 2019-03-27 01:14:01,405 INFO  -  This is the response Code 200 
+ 2019-03-27 01:14:01,406 INFO  -  we check if the response is correct or not 
+ 2019-03-27 01:14:01,412 INFO  -  
+
+================================== Scenario (Sync) -  (3) Request is made with a valid bank account of Switzerland =======================================
+ 
+ 2019-03-27 01:14:01,414 INFO  -  ----------------------------a valid bank account of Switzerland is provided---------------------------- 
+ 2019-03-27 01:14:01,417 INFO  -  Bank Account: CH7800768RELKKR4UGRYA 
+ 2019-03-27 01:14:01,418 INFO  -  We check for a bank account validation 
+ 2019-03-27 01:14:01,420 INFO  -  
+Request URL: https://dev.horizonafs.com/ecommercerest/api/v3/validate/bank-account
+Request data : {"bankAccount":"CH7800768RELKKR4UGRYA"} 
+ 2019-03-27 01:14:01,667 INFO  -  
+Request header [X-Auth-Key:Q7DaxRnFls6IpwSW1SQ2FaTFOf7UdReAFNoKY68L] 
+ 2019-03-27 01:14:01,670 INFO  -  This is the response {"isValid":true} 
+ 2019-03-27 01:14:01,671 INFO  -  This is the response Code 200 
+ 2019-03-27 01:14:01,672 INFO  -  we check if the response is correct or not 
+ 2019-03-27 01:14:01,676 INFO  -  
+
+================================== Scenario (Sync) -  (4) Request is made with a valid bank account of Finland =======================================
+ 
+ 2019-03-27 01:14:01,678 INFO  -  ----------------------------a valid bank account of Finland is provided---------------------------- 
+ 2019-03-27 01:14:01,681 INFO  -  Bank Account: FI7104540649659789 
+ 2019-03-27 01:14:01,682 INFO  -  We check for a bank account validation 
+ 2019-03-27 01:14:01,684 INFO  -  
+Request URL: https://dev.horizonafs.com/ecommercerest/api/v3/validate/bank-account
+Request data : {"bankAccount":"FI7104540649659789"} 
+ 2019-03-27 01:14:01,972 INFO  -  
+Request header [X-Auth-Key:Q7DaxRnFls6IpwSW1SQ2FaTFOf7UdReAFNoKY68L] 
+ 2019-03-27 01:14:01,974 INFO  -  This is the response {"isValid":false,"riskCheckMessages":[{"actionCode":"AskConsumerToReEnterData","code":"200.909","customerFacingMessage":"Die Kontonummer dieses Landes wird f\u00fcr diesen AfterPay-H\u00e4ndler nicht unterst\u00fctzt","fieldReference":"bankAccount","message":"Account number from this country is not supported for this AfterPay merchant.","type":"BusinessError"}]} 
+ 2019-03-27 01:14:01,975 INFO  -  This is the response Code 200 
+ 2019-03-27 01:14:01,975 INFO  -  we check if the response is correct or not 
+ 2019-03-27 01:14:01,977 INFO  -  
+
+================================== Scenario (Sync) -  (5) Request is made with a valid bank account of Sweden =======================================
+ 
+ 2019-03-27 01:14:01,978 INFO  -  ----------------------------a valid bank account of Sweden is provided---------------------------- 
+ 2019-03-27 01:14:01,979 INFO  -  Bank Account: SE9460473075251668040364 
+ 2019-03-27 01:14:01,979 INFO  -  We check for a bank account validation 
+ 2019-03-27 01:14:01,980 INFO  -  
+Request URL: https://dev.horizonafs.com/ecommercerest/api/v3/validate/bank-account
+Request data : {"bankAccount":"SE9460473075251668040364"} 
+ 2019-03-27 01:14:02,284 INFO  -  
+Request header [X-Auth-Key:Q7DaxRnFls6IpwSW1SQ2FaTFOf7UdReAFNoKY68L] 
+ 2019-03-27 01:14:02,286 INFO  -  This is the response {"isValid":false,"riskCheckMessages":[{"actionCode":"AskConsumerToReEnterData","code":"200.909","customerFacingMessage":"Die Kontonummer dieses Landes wird f\u00fcr diesen AfterPay-H\u00e4ndler nicht unterst\u00fctzt","fieldReference":"bankAccount","message":"Account number from this country is not supported for this AfterPay merchant.","type":"BusinessError"}]} 
+ 2019-03-27 01:14:02,287 INFO  -  This is the response Code 200 
+ 2019-03-27 01:14:02,288 INFO  -  we check if the response is correct or not 
+ 2019-03-27 01:14:02,299 INFO  -  
+
+================================== Scenario (Sync) -  (6) Request is made with a valid bank account of Norway =======================================
+ 
+ 2019-03-27 01:14:02,300 INFO  -  ----------------------------a valid bank account of Norway is provided---------------------------- 
+ 2019-03-27 01:14:02,302 INFO  -  Bank Account: NO1069080818108 
+ 2019-03-27 01:14:02,303 INFO  -  We check for a bank account validation 
+ 2019-03-27 01:14:02,304 INFO  -  
+Request URL: https://dev.horizonafs.com/ecommercerest/api/v3/validate/bank-account
+Request data : {"bankAccount":"NO1069080818108"} 
+ 2019-03-27 01:14:02,613 INFO  -  
+Request header [X-Auth-Key:Q7DaxRnFls6IpwSW1SQ2FaTFOf7UdReAFNoKY68L] 
+ 2019-03-27 01:14:02,615 INFO  -  This is the response {"isValid":false,"riskCheckMessages":[{"actionCode":"AskConsumerToReEnterData","code":"200.909","customerFacingMessage":"Die Kontonummer dieses Landes wird f\u00fcr diesen AfterPay-H\u00e4ndler nicht unterst\u00fctzt","fieldReference":"bankAccount","message":"Account number from this country is not supported for this AfterPay merchant.","type":"BusinessError"}]} 
+ 2019-03-27 01:14:02,616 INFO  -  This is the response Code 200 
+ 2019-03-27 01:14:02,617 INFO  -  we check if the response is correct or not 
+ 2019-03-27 01:14:02,620 INFO  -  
+
+================================== Scenario (Sync) -  (7) Request is made with a valid bank account of Denmark =======================================
+ 
+ 2019-03-27 01:14:02,622 INFO  -  ----------------------------a valid bank account of Denmark is provided---------------------------- 
+ 2019-03-27 01:14:02,624 INFO  -  Bank Account: DK0426617605387566 
+ 2019-03-27 01:14:02,625 INFO  -  We check for a bank account validation 
+ 2019-03-27 01:14:02,626 INFO  -  
+Request URL: https://dev.horizonafs.com/ecommercerest/api/v3/validate/bank-account
+Request data : {"bankAccount":"DK0426617605387566"} 
+ 2019-03-27 01:14:02,917 INFO  -  
+Request header [X-Auth-Key:Q7DaxRnFls6IpwSW1SQ2FaTFOf7UdReAFNoKY68L] 
+ 2019-03-27 01:14:02,918 INFO  -  This is the response {"isValid":false,"riskCheckMessages":[{"actionCode":"AskConsumerToReEnterData","code":"200.909","customerFacingMessage":"Die Kontonummer dieses Landes wird f\u00fcr diesen AfterPay-H\u00e4ndler nicht unterst\u00fctzt","fieldReference":"bankAccount","message":"Account number from this country is not supported for this AfterPay merchant.","type":"BusinessError"}]} 
+ 2019-03-27 01:14:02,919 INFO  -  This is the response Code 200 
+ 2019-03-27 01:14:02,920 INFO  -  we check if the response is correct or not 
+ 2019-03-27 01:14:02,923 INFO  -  
+
+================================== Scenario (Sync) -  (8) Request is made with a valid bank account of non supported countries =======================================
+ 
+ 2019-03-27 01:14:02,925 INFO  -  ----------------------------a valid bank account of non supported country is provided---------------------------- 
+ 2019-03-27 01:14:02,927 INFO  -  Bank Account: PT02800866958802221492343 
+ 2019-03-27 01:14:02,928 INFO  -  We check for a bank account validation 
+ 2019-03-27 01:14:02,930 INFO  -  
+Request URL: https://dev.horizonafs.com/ecommercerest/api/v3/validate/bank-account
+Request data : {"bankAccount":"PT02800866958802221492343"} 
+ 2019-03-27 01:14:03,229 INFO  -  
+Request header [X-Auth-Key:Q7DaxRnFls6IpwSW1SQ2FaTFOf7UdReAFNoKY68L] 
+ 2019-03-27 01:14:03,231 INFO  -  This is the response {"isValid":false,"riskCheckMessages":[{"actionCode":"AskConsumerToReEnterData","code":"200.909","customerFacingMessage":"Die Kontonummer dieses Landes wird f\u00fcr diesen AfterPay-H\u00e4ndler nicht unterst\u00fctzt","fieldReference":"bankAccount","message":"Account number from this country is not supported for this AfterPay merchant.","type":"BusinessError"}]} 
+ 2019-03-27 01:14:03,232 INFO  -  This is the response Code 200 
+ 2019-03-27 01:14:03,233 INFO  -  we check if the response is correct or not 
+ 2019-03-27 01:14:03,236 INFO  -  
+
+================================== Scenario (Sync) - Request is made with an invalid bank account[0] =======================================
+ 
+ 2019-03-27 01:14:03,238 INFO  -  ----------------------------an invalid bank account is provided---------------------------- 
+ 2019-03-27 01:14:03,240 INFO  -  Bank Account: SK8813229378786853432815 
+ 2019-03-27 01:14:03,240 INFO  -  We check for a bank account validation 
+ 2019-03-27 01:14:03,241 INFO  -  
+Request URL: https://dev.horizonafs.com/ecommercerest/api/v3/validate/bank-account
+Request data : {"bankAccount":"SK8813229378786853432815156"} 
+ 2019-03-27 01:14:03,551 INFO  -  
+Request header [X-Auth-Key:Q7DaxRnFls6IpwSW1SQ2FaTFOf7UdReAFNoKY68L] 
+ 2019-03-27 01:14:03,552 INFO  -  This is the response {"isValid":false,"riskCheckMessages":[{"actionCode":"AskConsumerToReEnterData","code":"200.909","customerFacingMessage":"Die Kontonummer dieses Landes wird f\u00fcr diesen AfterPay-H\u00e4ndler nicht unterst\u00fctzt","fieldReference":"bankAccount","message":"Account number from this country is not supported for this AfterPay merchant.","type":"BusinessError"}]} 
+ 2019-03-27 01:14:03,553 INFO  -  This is the response Code 200 
+ 2019-03-27 01:14:03,553 INFO  -  we check if the response is correct or not 
+ ]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -53,6 +53,9 @@ class specClass extends Specification  {
         then: "we check if the response is correct or not"
         logger.info("we check if the response is correct or not")
         response.responseBase.statusline.statusCode == responseStatus
+        logger.info("Expected responseCode is 200")
+        logger.info("This is the response " + response.responseBase.statusline.statusCode)
+        logger.info("Response is expected")
 
         where: "a set of other parameters"
         responseStatus | scenarioSerial
@@ -78,6 +81,9 @@ class specClass extends Specification  {
         then: "we check if the response is correct or not"
         logger.info("we check if the response is correct or not")
         response.responseBase.statusline.statusCode == responseStatus
+        logger.info("Expected responseCode is 200")
+        logger.info("This is the response " + response.responseBase.statusline.statusCode)
+        logger.info("Response is expected")
 
         where: "a set of other parameters"
         responseStatus | scenarioSerial
@@ -102,6 +108,9 @@ class specClass extends Specification  {
         then: "we check if the response is correct or not"
         logger.info("we check if the response is correct or not")
         response.responseBase.statusline.statusCode == responseStatus
+        logger.info("Expected responseCode is 200")
+        logger.info("This is the response " + response.responseBase.statusline.statusCode)
+        logger.info("Response is expected")
 
         where: "a set of other parameters"
         responseStatus | scenarioSerial
@@ -127,6 +136,9 @@ class specClass extends Specification  {
         then: "we check if the response is correct or not"
         logger.info("we check if the response is correct or not")
         response.responseBase.statusline.statusCode == responseStatus
+        logger.info("Expected responseCode is 200.909")
+        logger.info("This is the response " + response.responseBase.statusline.statusCode)
+        logger.info("Response is expected")
 
         where: "a set of other parameters"
         responseStatus | scenarioSerial
@@ -152,6 +164,9 @@ class specClass extends Specification  {
         then: "we check if the response is correct or not"
         logger.info("we check if the response is correct or not")
         response.data.riskCheckMessages.get(0).code == responseStatus
+        logger.info("Expected responseCode is 200.909")
+        logger.info("This is the response " + response.responseBase.statusline.statusCode)
+        logger.info("Response is expected")
 
         where: "a set of other parameters"
         responseStatus | scenarioSerial
@@ -176,6 +191,9 @@ class specClass extends Specification  {
         then: "we check if the response is correct or not"
         logger.info("we check if the response is correct or not")
         response.data.riskCheckMessages.get(0).code == responseStatus
+        logger.info("Expected responseCode is 200.909")
+        logger.info("This is the response " + response.responseBase.statusline.statusCode)
+        logger.info("Response is expected")
 
         where: "a set of other parameters"
         responseStatus | scenarioSerial
@@ -201,6 +219,9 @@ class specClass extends Specification  {
         then: "we check if the response is correct or not"
         logger.info("we check if the response is correct or not")
         response.data.riskCheckMessages.get(0).code == responseStatus
+        logger.info("Expected responseCode is 200.909")
+        logger.info("This is the response " + response.responseBase.statusline.statusCode)
+        logger.info("Response is expected")
 
         where: "a set of other parameters"
         responseStatus | scenarioSerial
@@ -226,6 +247,9 @@ class specClass extends Specification  {
         then: "we check if the response is correct or not"
         logger.info("we check if the response is correct or not")
         response.data.riskCheckMessages.get(0).code == responseStatus
+        logger.info("Expected responseCode is 200.909")
+        logger.info("This is the response " + response.responseBase.statusline.statusCode)
+        logger.info("Response is expected")
 
         where: "a set of other parameters"
         responseStatus | scenarioSerial
@@ -234,7 +258,7 @@ class specClass extends Specification  {
     }
 
     @Unroll
-    def "Request is made with an invalid bank account"() {
+    def " (#scenarioSerial) Request is made with an invalid bank account"() {
         given: "an invalid bank account is provided"
         logger.info ("----------------------------an invalid bank account is provided----------------------------")
         def bankAccount = generateBankAccountNumber("Bulgaria")
@@ -251,6 +275,9 @@ class specClass extends Specification  {
         then: "we check if the response is correct or not"
         logger.info("we check if the response is correct or not")
         response.data.riskCheckMessages.get(0).code == responseStatus
+        logger.info("Expected responseCode is 200.909")
+        logger.info("This is the response " + response.responseBase.statusline.statusCode)
+        logger.info("Response is expected")
 
         where: "a set of other parameters"
         responseStatus | scenarioSerial
@@ -258,27 +285,53 @@ class specClass extends Specification  {
 
     }
 
-//    @Unroll
-//    def "Request is made with an invalid x auth token"() {
-//        given: "an invalid bank account is provided"
-//        logger.info ("----------------------------an invalid bank account is provided----------------------------")
-//        def bankAccount = generateBankAccountNumber("Bulgaria")
-//
-//        logger.info ("Bank Account: "+bankAccount.toString())
-//        when: " We check for a bank account validation"
-//        logger.info ("We check for a bank account validation")
-//        def response = requestor.invalidRequestToApi(bankAccount.toString())
-//
-////        def responseJson = JsonOutput.toJson(response)
-//        logger.info("This is the response " + JsonOutput.toJson(response.data))
-//        logger.info("This is the response Code " + response.responseBase.statusline.statusCode)
-//
-//        then: "we check if the response is correct or not"
-//        logger.info("we check if the response is correct or not")
-//        response.data.riskCheckMessages.get(0).code == "200.909"
-//
-//    }
+    @Unroll
+    def "Request is made with short (<7) length"() {
+        given: "an invalid bank account is provided"
+        logger.info ("----------------------------an invalid bank account is provided----------------------------")
+        def bankAccount = generateBankAccountNumber("Bulgaria")
 
-//    invalidRequestToApi
+        logger.info ("Bank Account: "+bankAccount.toString().substring(0,6))
+        when: " We check for a bank account validation"
+        logger.info ("We check for a bank account validation")
+        def response = requestor.invalidRequestToApi(bankAccount.toString().substring(0,6))
+
+//        def responseJson = JsonOutput.toJson(response)
+        logger.info("This is the response " + JsonOutput.toJson(response))
+//        logger.info("This is the response Code " + response.responseBase.statusline.statusCode)
+
+        then: "we check if the response is correct or not"
+        logger.info("we check if the response is correct or not")
+        response.message == "Authorization has been denied for this request."
+        logger.info("Expected response is \"Authorization has been denied for this request.\"")
+        logger.info("This is the response " + JsonOutput.toJson(response))
+        logger.info("Response is expected")
+
+    }
+
+    @Unroll
+    def "Request is made with long (>34) length"() {
+        given: "an invalid bank account is provided"
+        logger.info ("----------------------------an invalid bank account is provided----------------------------")
+        def bankAccount = generateBankAccountNumber("Bulgaria")
+
+        logger.info ("Bank Account: "+bankAccount.toString()+"000011236444546464")
+        when: " We check for a bank account validation"
+        logger.info ("We check for a bank account validation")
+        def response = requestor.invalidRequestToApi(bankAccount.toString()+"000011236444546464000011236444546464")
+
+//        def responseJson = JsonOutput.toJson(response)
+        logger.info("This is the response " + JsonOutput.toJson(response))
+//        logger.info("This is the response Code " + response.responseBase.statusline.statusCode)
+
+        then: "we check if the response is correct or not"
+        logger.info("we check if the response is correct or not")
+        response.message == "Authorization has been denied for this request."
+        logger.info("Expected response is \"Authorization has been denied for this request.\"")
+        logger.info("This is the response " + JsonOutput.toJson(response))
+        logger.info("Response is expected")
+    }
+
+
 
 }

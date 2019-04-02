@@ -48,7 +48,7 @@ dependencies {
 
 
 task flyBot(type: Test, overwrite: true){
-
+    systemProperty 'com.athaydes.spockframework.report.outputDir', 'build/reports/spock'
 }
 
 

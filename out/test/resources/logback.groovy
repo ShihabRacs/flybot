@@ -12,7 +12,7 @@ appender("CONSOLE", ConsoleAppender) {
         level = TRACE
     }
     encoder(PatternLayoutEncoder) {
-        pattern = "%date %-5level - %X %msg %n >>>>>>"
+        pattern = "%date %-5level - %X %msg %n "
     }
 }
 appender("FILE", RollingFileAppender) {
@@ -24,7 +24,7 @@ appender("FILE", RollingFileAppender) {
         level = TRACE
     }
     encoder(PatternLayoutEncoder) {
-        pattern = "%date %-5level - %X %msg %n >>>>>>"
+        pattern = "%date %-5level - %X %msg %n "
     }
 }
 logger("com.test.flyBot", TRACE, ["FILE"])

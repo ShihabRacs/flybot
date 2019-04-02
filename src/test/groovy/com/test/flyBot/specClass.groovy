@@ -286,7 +286,7 @@ class specClass extends Specification  {
     }
 
     @Unroll
-    def "Request is made with short (<7) length"() {
+    def " (#scenarioSerial) Request is made with short (<7) length"() {
         given: "an invalid bank account is provided"
         logger.info ("----------------------------an invalid bank account is provided----------------------------")
         def bankAccount = generateBankAccountNumber("Bulgaria")
@@ -310,7 +310,7 @@ class specClass extends Specification  {
     }
 
     @Unroll
-    def "Request is made with long (>34) length"() {
+    def " (#scenarioSerial) Request is made with long (>34) length"() {
         given: "an invalid bank account is provided"
         logger.info ("----------------------------an invalid bank account is provided----------------------------")
         def bankAccount = generateBankAccountNumber("Bulgaria")

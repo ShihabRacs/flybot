@@ -2,35 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="301a26ef-38a3-421e-8af1-ea1fd991a0ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/groovy/test/com/test/flyBot/helper/requestor/specClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/groovy/test/com/test/flyBot/helper/requestor/specClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/flyBot/classes/com.test.flyBot.helper.requestor.specClass.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/flyBot/classes/com.test.flyBot.helper.requestor.specClass.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/flyBot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/flyBot/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/flyBot/packages/com.test.flyBot.helper.requestor.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/flyBot/packages/com.test.flyBot.helper.requestor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/spock-reports/aggregated_report.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/spock-reports/com.test.flyBot.helper.requestor.specClass.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/spock-reports/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/flyBot/TEST-com.test.flyBot.helper.requestor.specClass.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/flyBot/TEST-com.test.flyBot.helper.requestor.specClass.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/flyBot/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/flyBot/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/flyBot/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/flyBot/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/flyBot/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/flyBot/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/flyBot/jar_extract_3257425820222813793_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/flybot.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/flybot.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/test/flybot/helper/requestor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/test/flybot/helper/requestor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/test/flybot/helper/requestor/specClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/test/flybot/helper/requestor/specClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/test/flybot/util/HeaderBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/test/flybot/util/HeaderBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/test/flybot/util/utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/test/flybot/util/utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/country codes" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/country codes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/resources/logback.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/logback.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/com/test/flyBot/specClass.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/com/test/flyBot/specClass.groovy" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -143,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/com/test/flyBot/specClass.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="336" column="1" lean-forward="true" selection-start-line="336" selection-start-column="1" selection-end-line="336" selection-end-column="1" />
+            <state relative-caret-position="224">
+              <caret line="312" column="28" selection-start-line="312" selection-start-column="28" selection-end-line="312" selection-end-column="28" />
               <folding>
                 <element signature="e#43#82#0" expanded="true" />
               </folding>
@@ -327,7 +298,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554224474639" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554224579532" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../kona-pay-e2e-test" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -686,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/com/test/flyBot/specClass.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="336" column="1" lean-forward="true" selection-start-line="336" selection-start-column="1" selection-end-line="336" selection-end-column="1" />
+        <state relative-caret-position="224">
+          <caret line="312" column="28" selection-start-line="312" selection-start-column="28" selection-end-line="312" selection-end-column="28" />
           <folding>
             <element signature="e#43#82#0" expanded="true" />
           </folding>
